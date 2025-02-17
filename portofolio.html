@@ -1,53 +1,88 @@
 <!DOCTYPE html>
-<!-- saved from url=(0050)https://jieranli-pi.github.io/turquoisefingerdrum/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>turquoisefingerdrum.com</title>
-  <link rel="stylesheet" href="./turquoisefingerdrum.com_files/style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Jieran Li</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 1in;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+        }
+        .contact {
+            margin-bottom: 20px;
+        }
+        .contact a {
+            color: blue;
+            text-decoration: none;
+        }
+        .section {
+            margin-top: 20px;
+        }
+        .section h2 {
+            font-size: 18px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Turquoise Finger Drum</h1>
-    <a href="https://jieranli-pi.github.io/turquoisefingerdrum/about.html" class="about-link">About</a>
-  </header>
-
-  <!-- Drum Kit Selection Dropdown -->
-  <div class="drum-kit-selector">
-    <label for="drumKit">Choose Drum Kit:</label>
-    <select id="drumKit" class="no-keyboard-trigger fancy-select">
-      <option value="maple">Maple</option>
-      <option value="jazz">Jazz</option>
-      <option value="electronic">Electronic</option>
-    </select>
-  </div>
-
-  <!-- Volume and Mixing Button -->
-  <div class="volume-mixing-section">
-    <div id="volumeMixingBtn" class="custom-button no-keyboard-trigger fancy-button">Volume and Mixing</div>
-  </div>
-
-  <!-- Choose Sample Button -->
-  <div class="choose-sample-section">
-    <label for="chooseSample">Load Sample</label>
-    <div id="chooseSampleBtn" class="custom-button no-keyboard-trigger fancy-button">Choose Sample</div>
-    <input type="file" id="chooseSample" accept=".wav" style="display: none;">
-  </div>
-
-  <!-- Volume Controls -->
-  <div id="volumeControls" class="hidden">
-    <label for="overallVolume">Overall Volume:</label>
-    <input type="range" id="overallVolume" min="0" max="100" value="60">
-    <div id="keysVolumeControls">
-      <!-- Individual key volume controls will be dynamically added here -->
+    <h1><strong>Portfolio</strong></h1>
+    <h2 style="text-align: center;">Jieran Li</h2>
+    <p style="text-align: center;">Date: <script>document.write(new Date().toLocaleDateString());</script></p>
+    
+    <div class="contact">
+        <h2>Contact Information</h2>
+        <p>Email: lijieran120@gmail.com</p>
+        <p>LinkedIn: <a href="https://nl.linkedin.com/in/jieran-l-78a633173" target="_blank">linkedin.com/in/yourprofile</a></p>
     </div>
-  </div>
-
-  <div id="keyboard" class="keyboard"><div class="keyboard-row"><div class="key " data-key="Q">Q<input type="range" min="0" max="100"></div><div class="key " data-key="W">W<input type="range" min="0" max="100"></div><div class="key " data-key="E">E<input type="range" min="0" max="100"></div><div class="key " data-key="R">R<input type="range" min="0" max="100"></div><div class="key " data-key="T">T<input type="range" min="0" max="100"></div><div class="key " data-key="Y">Y<input type="range" min="0" max="100"></div><div class="key " data-key="U">U<input type="range" min="0" max="100"></div><div class="key " data-key="I">I<input type="range" min="0" max="100"></div><div class="key " data-key="O">O<input type="range" min="0" max="100"></div><div class="key " data-key="P">P<input type="range" min="0" max="100"></div></div><div class="keyboard-row"><div class="key " data-key="A">A<input type="range" min="0" max="100"></div><div class="key " data-key="S">S<input type="range" min="0" max="100"></div><div class="key " data-key="D">D<input type="range" min="0" max="100"></div><div class="key " data-key="F">F<input type="range" min="0" max="100"></div><div class="key " data-key="G">G<input type="range" min="0" max="100"></div><div class="key " data-key="H">H<input type="range" min="0" max="100"></div><div class="key " data-key="J">J<input type="range" min="0" max="100"></div><div class="key " data-key="K">K<input type="range" min="0" max="100"></div><div class="key " data-key="L">L<input type="range" min="0" max="100"></div></div><div class="keyboard-row"><div class="key " data-key="Z">Z<input type="range" min="0" max="100"></div><div class="key " data-key="X">X<input type="range" min="0" max="100"></div><div class="key " data-key="C">C<input type="range" min="0" max="100"></div><div class="key " data-key="V">V<input type="range" min="0" max="100"></div><div class="key " data-key="B">B<input type="range" min="0" max="100"></div><div class="key " data-key="N">N<input type="range" min="0" max="100"></div><div class="key " data-key="M">M<input type="range" min="0" max="100"></div></div><div class="keyboard-row"><div class="key spacebar" data-key=" "><input type="range" min="0" max="100"></div></div></div>
-
-  <!-- Instruction Message -->
-  <div id="instructionMessage" class="hidden">Press the key you want to assign this new sound to.</div>
-
-  <script src="./turquoisefingerdrum.com_files/script.js.download"></script>
-
-</body></html>
+    
+    <div class="section">
+        <h2>Numerical Modeling for Pipeline Leakage Detection</h2>
+        <ul>
+            <li>Developed a model to simulate electric current and potential distribution in terrain affected by underground pipeline leakage.</li>
+            <li>Implemented numerical techniques to aid in efficient leak detection.</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2>Georeferencing & Mapping for Remote Sensing Applications</h2>
+        <ul>
+            <li>Contributed to the EPSG geodetic datum project in Limburg by building an antenna for satellite and airborne data collection.</li>
+            <li>Used laser scanning and photogrammetry for 3D terrain modeling and blockage angle calculations.</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2>Numerical Modeling for Underground Fracture Cleaning</h2>
+        <ul>
+            <li>Worked on geometric computations for underground fracture cleaning using parallel computing to optimize processing time.</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2>FingerDrum – UI and System Modeling</h2>
+        <ul>
+            <li>Designed a web-based virtual drum kit mapping laptop keyboard inputs to realistic drum sounds.</li>
+            <li>Explored front-end programming to develop user-friendly interfaces and system logic.</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2>Microscopic Image Processing for Sandstone Analysis</h2>
+        <ul>
+            <li>Developed a high-resolution image processing tool to analyze petrophysical properties of sandstone.</li>
+            <li>Currently rewriting the code in JavaScript to make it accessible via a web interface for geologists.</li>
+        </ul>
+    </div>
+</body>
+</html>
