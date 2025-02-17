@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://jieranli-pi.github.io/turquoisefingerdrum/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>turquoisefingerdrum.com</title>
+  <link rel="stylesheet" href="./turquoisefingerdrum.com_files/style.css">
+</head>
+<body>
+  <header>
+    <h1>Turquoise Finger Drum</h1>
+    <a href="https://jieranli-pi.github.io/turquoisefingerdrum/about.html" class="about-link">About</a>
+  </header>
+
+  <!-- Drum Kit Selection Dropdown -->
+  <div class="drum-kit-selector">
+    <label for="drumKit">Choose Drum Kit:</label>
+    <select id="drumKit" class="no-keyboard-trigger fancy-select">
+      <option value="maple">Maple</option>
+      <option value="jazz">Jazz</option>
+      <option value="electronic">Electronic</option>
+    </select>
+  </div>
+
+  <!-- Volume and Mixing Button -->
+  <div class="volume-mixing-section">
+    <div id="volumeMixingBtn" class="custom-button no-keyboard-trigger fancy-button">Volume and Mixing</div>
+  </div>
+
+  <!-- Choose Sample Button -->
+  <div class="choose-sample-section">
+    <label for="chooseSample">Load Sample</label>
+    <div id="chooseSampleBtn" class="custom-button no-keyboard-trigger fancy-button">Choose Sample</div>
+    <input type="file" id="chooseSample" accept=".wav" style="display: none;">
+  </div>
+
+  <!-- Volume Controls -->
+  <div id="volumeControls" class="hidden">
+    <label for="overallVolume">Overall Volume:</label>
+    <input type="range" id="overallVolume" min="0" max="100" value="60">
+    <div id="keysVolumeControls">
+      <!-- Individual key volume controls will be dynamically added here -->
+    </div>
+  </div>
+
+  <div id="keyboard" class="keyboard"><div class="keyboard-row"><div class="key " data-key="Q">Q<input type="range" min="0" max="100"></div><div class="key " data-key="W">W<input type="range" min="0" max="100"></div><div class="key " data-key="E">E<input type="range" min="0" max="100"></div><div class="key " data-key="R">R<input type="range" min="0" max="100"></div><div class="key " data-key="T">T<input type="range" min="0" max="100"></div><div class="key " data-key="Y">Y<input type="range" min="0" max="100"></div><div class="key " data-key="U">U<input type="range" min="0" max="100"></div><div class="key " data-key="I">I<input type="range" min="0" max="100"></div><div class="key " data-key="O">O<input type="range" min="0" max="100"></div><div class="key " data-key="P">P<input type="range" min="0" max="100"></div></div><div class="keyboard-row"><div class="key " data-key="A">A<input type="range" min="0" max="100"></div><div class="key " data-key="S">S<input type="range" min="0" max="100"></div><div class="key " data-key="D">D<input type="range" min="0" max="100"></div><div class="key " data-key="F">F<input type="range" min="0" max="100"></div><div class="key " data-key="G">G<input type="range" min="0" max="100"></div><div class="key " data-key="H">H<input type="range" min="0" max="100"></div><div class="key " data-key="J">J<input type="range" min="0" max="100"></div><div class="key " data-key="K">K<input type="range" min="0" max="100"></div><div class="key " data-key="L">L<input type="range" min="0" max="100"></div></div><div class="keyboard-row"><div class="key " data-key="Z">Z<input type="range" min="0" max="100"></div><div class="key " data-key="X">X<input type="range" min="0" max="100"></div><div class="key " data-key="C">C<input type="range" min="0" max="100"></div><div class="key " data-key="V">V<input type="range" min="0" max="100"></div><div class="key " data-key="B">B<input type="range" min="0" max="100"></div><div class="key " data-key="N">N<input type="range" min="0" max="100"></div><div class="key " data-key="M">M<input type="range" min="0" max="100"></div></div><div class="keyboard-row"><div class="key spacebar" data-key=" "><input type="range" min="0" max="100"></div></div></div>
+
+  <!-- Instruction Message -->
+  <div id="instructionMessage" class="hidden">Press the key you want to assign this new sound to.</div>
+
+  <script src="./turquoisefingerdrum.com_files/script.js.download"></script>
+
+</body></html>
