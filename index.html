@@ -33,6 +33,16 @@
             list-style-type: square;
             padding-left: 20px;
         }
+        .portfolio-image {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+        .portfolio-video {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -46,41 +56,55 @@
     </div>
     
     <div class="section">
-        <h2>Numerical Modeling for Pipeline Leakage Detection</h2>
+        <h2>Numerical Modeling for Electric Current Detection in Pipeline Leakage</h2>
+        <img src="sewage_pipeline_idea.png" alt="Sewage Pipeline Idea" class="portfolio-image">
         <ul>
-            <li>Developed a model to simulate electric current and potential distribution in terrain affected by underground pipeline leakage.</li>
-            <li>Implemented numerical techniques to aid in efficient leak detection.</li>
+            <li>I developed a model to simulate electric current and potential distribution in terrain affected by underground pipeline leakage. This project relies on the finite difference method, using a coefficient matrix (conductivity at each location), boundary conditions (where voltage is induced and where conductivity is absent at the pipe surface), and a linear solver to simulate current and potential distribution.</li>
+            <li>The model helps maintenance technicians better understand the effects of leakage.</li>
         </ul>
     </div>
     
     <div class="section">
-        <h2>Georeferencing & Mapping for Remote Sensing Applications</h2>
+        <h2>Geo-referencing and Mapping Project</h2>
+        <img src="antennna.png" alt="Antenna for Data Collection" class="portfolio-image">
         <ul>
-            <li>Contributed to the EPSG geodetic datum project in Limburg by building an antenna for satellite and airborne data collection.</li>
-            <li>Used laser scanning and photogrammetry for 3D terrain modeling and blockage angle calculations.</li>
+            <li>Alongside my team, I participated in a project contributing to the geodetic datum EPSG in Limburg. We built an antenna to collect satellite and airborne data, serving as a georeference station for coordinate system updates.</li>
+            <li>My role involved laser scanning, photogrammetry to generate 3D models of terrain, calculating blockage angles from surrounding trees, and providing maintenance recommendations.</li>
         </ul>
     </div>
     
     <div class="section">
-        <h2>Numerical Modeling for Underground Fracture Cleaning</h2>
+        <h2>Fingerdrum – Showcasing UI Development</h2>
+        <video class="portfolio-video" controls>
+            <source src="turqdrumpo.mov" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
         <ul>
-            <li>Worked on geometric computations for underground fracture cleaning using parallel computing to optimize processing time.</li>
+            <li>As a creative project, I designed a web-based virtual drum kit that maps laptop keyboard inputs to realistic drum sounds.</li>
+            <li>I implemented interactive sound mechanisms based on my experience as a drummer and finger-drummer. This project allowed me to explore front-end development and improve user interface design.</li>
         </ul>
     </div>
     
     <div class="section">
-        <h2>FingerDrum – UI and System Modeling</h2>
+        <h2>Numerical Modeling for Cleaning Fractures Underground</h2>
+        <img src="fracture_clean.png" alt="Underground Fracture Cleaning" class="portfolio-image">
         <ul>
-            <li>Designed a web-based virtual drum kit mapping laptop keyboard inputs to realistic drum sounds.</li>
-            <li>Explored front-end programming to develop user-friendly interfaces and system logic.</li>
+            <li>This university project focused on cleaning fracture segmentations in underground environments. I worked on geometric computation, determining if segment intersections are unique.</li>
+            <li>Since computing distances between tens of thousands of nodes can be slow, I used parallel computing to speed up the process and tested the code on DelftBLUE, a supercomputer. Another teammate explored meshing techniques to optimize calculations.</li>
         </ul>
     </div>
     
     <div class="section">
-        <h2>Microscopic Image Processing for Sandstone Analysis</h2>
+        <h2>Image Processing for Microscopic Sandstone Data</h2>
+        <img src="thesis_screenshot.png" alt="Microscopic Image of Sandstone" class="portfolio-image">
+        <video class="portfolio-video" controls>
+            <source src="fossilviewer.mov" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
         <ul>
-            <li>Developed a high-resolution image processing tool to analyze petrophysical properties of sandstone.</li>
-            <li>Currently rewriting the code in JavaScript to make it accessible via a web interface for geologists.</li>
+            <li>For my bachelor’s thesis, I processed high-resolution microscopic images of sandstone to extract petrophysical properties such as porosity, grain size distribution, and shape indices.</li>
+            <li>One challenge was the data size—each thin-section image required about 15GB of memory. I developed methods to divide large images into tiles and combine partial results effectively.</li>
+            <li>Since geologists at my current company could benefit from this work, I am currently rewriting the image processing code in JavaScript and hosting it as a website.</li>
         </ul>
     </div>
 </body>
